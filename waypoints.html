@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Slideshow</title>
+    <link rel="stylesheet" href="styles/waypoints.css">
+</head>
+<body>
+    <div class="map-container">
+        <img src="images/hood1.png" alt="Map" class="map-background">
+        <span class="icon" style="top: 43%; left: 64%; background-color: green; border-radius: 50%; padding: 5px; color: white;" onclick="openSlideshow('area1')">📍</span>
+        <span class="icon" style="top: 43%; left: 58%;" onclick="openSlideshow('area2')">📍</span>
+        <span class="icon" style="top: 60%; left: 50%;" onclick="openSlideshow('area3')">📍</span>
+        <span class="icon" style="top: 35%; left: 67%;" onclick="openSlideshow('area4')">📍</span>
+        <span class="icon" style="top: 33%; left: 58%;" onclick="openSlideshow('area5')">📍</span>
+        <span class="icon" style="top: 33%; left: 45%;" onclick="openSlideshow('area7')">📍</span>
+        <span class="icon" style="top: 51%; left: 64%;" onclick="openSlideshow('area6')">📍</span>
+        <span class="icon" style="top: 23%; left: 58%;" onclick="openSlideshow('area8')">📍</span>
+        <span class="icon" style="top: 12%; left: 32%;" onclick="openSlideshow('area9')">📍</span>
+        <span class="icon" style="top: 50%; left: 20%;" onclick="openSlideshow('area10')">📍</span>
+		<span class="icon" style="top: 25%; left: 20%;" onclick="openSlideshow('area11')">📍</span>
+		<span class="icon" style="top: 5%; left: 40%;" onclick="openSlideshow('area12')">📍</span>
+    </div>
+
+    <div class="slideshow">
+		<span class="close" onclick="document.querySelector('.slideshow').style.display='none'">&times;</span>
+		<div id="slides" class="slides"></div>
+		<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+		<button class="next" onclick="changeSlide(1)">&#10095;</button>
+	</div>
+
+    <script src="scripts/waypoints.js"></script>
+</body>
+</html>
